@@ -1,0 +1,103 @@
+
+
+******
+
+The response to #: 0 is:
+
+HTTP/1.1 200 OK
+Content-Length: 320
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 04 Jul 2015 17:46:32 GMT
+Server: nginx
+
+{
+  "args": {
+    "key1": "value1"
+  }, 
+  "headers": {
+    "Accept-Encoding": "gzip", 
+    "Content-Length": "11", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "GRequests 0.1"
+  }, 
+  "origin": "73.50.93.211", 
+  "url": "http://httpbin.org/get?key1=value1"
+}
+
+
+*****
+
+
+
+******
+
+The response to #: 1 is:
+
+HTTP/1.1 200 OK
+Content-Length: 6410
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 04 Jul 2015 17:46:32 GMT
+Server: nginx
+
+{
+  "args": {}, 
+  "data": "<string>&lt;soRequest xmlns:xsi=&#34;http://www.w3.org/2001/XMLSchema-instance&#34; xmlns:xsd=&#34;http://www.w3.org/2001/XMLSchema&#34; xmlns=&#34;http://www.servicelive.com/namespaces/soRequest&#34;&gt;&#xA;   &lt;identification type=&#34;BuyerResourceId&#34;&gt;&#xA;      &lt;id&gt;20269&lt;/id&gt;&#xA;   &lt;/identification&gt;&#xA;   &lt;serviceorder version=&#34;1.0&#34; template=&#34;Electrical Template&#34;&gt;&#xA;      &lt;sectionGeneral&gt;&#xA;         &lt;title&gt;Install 1 Outlet for Digital Life device&lt;/title&gt;&#xA;         &lt;overview&gt;LICENSED ELECTRICIAN REQUIRED: **Installation of outlet (power source) for a Digital Life device, such as an outdoor camera. For additional questions regarding this service&#xA;order, please contact the Digital Life Dispatch Center (DLDC) at 855-455-9913 (option 1)  1. Electronic copies of device specific installation guides are attached to each&#xA;service order within the ServiceLive system.  2. ALL providers must complete applicable training modules prior to going onsite for their first AT&amp;amp;T job.  Training available at&#xA;lms.servicelive.com (your login was emailed to your company administrator) 3. We want to pay you quickly, so please upload your signed copy of the service order and complete for&#xA;payment in the ServiceLive system as soon as possible. --- THIS IS A CUSTOMER SELECTED DATE/TIME. 4. You MUST be able to arrive for the appointment and do this service within&#xA;the date/time window requested by the Customer. 5. DO NOT accept this order unless you are able to honor the Customer&#39;s requested date/time and DO NOT reschedule.&lt;/overview&gt;&#xA;         &lt;buyerTerms&gt;**VERY IMPORTANT --- SEE ATTACHED ?ATT Buyer T&amp;amp;C? DOCUMENT FOR DETAILED INSTRUCTIONS AND COMPLETE BUYER TERMS AND CONDITIONS THAT MUST BE FOLLOWED**&#xA;**BEFORE DOING ANY&#xA;ADDITIONAL WORK REQUESTED BY THE DLT, call the DLDC at 855-455-9913, option 1&#xA;***CONTACT/SUPPORT NUMBERS***&#xA;1.&#x9;AT&amp;amp;T Digital Life Dispatch Center (SLI or coordination issues)&#xA;a.&#x9;855-455-9913 ? Option 1&#xA;2.&#x9;AT&amp;amp;T Digital Life Customer Care (Call at the end of EVERY non-coordinated appt. to ensure device is working)&#xA;a.&#x9;855-455-9913 ? Option 2&lt;/buyerTerms&gt;&#xA;         &lt;specialInstructions&gt;Handle Digital Life devices carefully&lt;/specialInstructions&gt;&#xA;      &lt;/sectionGeneral&gt;&#xA;      &lt;scopeOfWork&gt;&#xA;         &lt;mainCategoryID&gt;1700&lt;/mainCategoryID&gt;&#xA;         &lt;tasks&gt;&#xA;            &lt;task&gt;&#xA;               &lt;taskName&gt;1 Outlet for Digital Life device&lt;/taskName&gt;&#xA;               &lt;categoryID&gt;1704&lt;/categoryID&gt;&#xA;               &lt;serviceType&gt;Installation&lt;/serviceType&gt;&#xA;               &lt;taskComment&gt;**PLEASE CAREFULLY READ THE BUYER TERMS AND CONDITIONS SECTION OF THIS SERVICE ORDER AS IT CONTAINS CRITICAL DETAILS RELATED TO THIS JOB**&#xA;**BEFORE DOING ANY ADDITIONAL WORK REQUESTED BY THE DLT, call the DLDC at 855-455-9913, option 1**&#xA;**TECHNICAL ASSISTANCE NEEDED?  REACH OUT TO OUR TECHNICAL SUPPORT TEAM @ 972-488-4345**&#xA;Time Estimation:  This service includes an average of 1 hour of service and troubleshooting including drive time for the first outlet plus an additional 30 minutes for each additional outlet.&#xA;1. All work performed must comply with all applicable regulations and utilize standard electrical procedures.&#xA;2. Identify location(s) of outlet(s) to be installed for outdoor camera with AT&amp;amp;T contact and customer.&#xA;3. Install outlet to provide power source for outdoor camera.&#xA;4. Test physical functionality of the outlet to ensure proper working capabilities.&#xA;5. Complete Service Order with the DL Tech (coordinated) and customer, and get signature. DL Tech and Customer validate proper installation and functionality together.&#xA;6. Dispose of all trash and personally hand a copy of documents and manuals to the AT&amp;amp;T contact prior to departure. Please do not leave the work area in a mess.&#xA;7. Take the time to answer any questions of the DL Tech and customer.&#xA;8. Upload signed service order and any additional paperwork (e.g. permit/inspection information) onto ServiceLive platform. - Quantity: 1&lt;/taskComment&gt;&#xA;            &lt;/task&gt;&#xA;         &lt;/tasks&gt;&#xA;      &lt;/scopeOfWork&gt;&#xA;      &lt;serviceLocation&gt;&#xA;         &lt;locationType&gt;Residential&lt;/locationType&gt;&#xA;         &lt;locationName&gt;VacationHome&lt;/locationName&gt;&#xA;         &lt;address1&gt;Barrington Rd&lt;/address1&gt;&#xA;         &lt;address2&gt;APT 101&lt;/address2&gt;&#xA;         &lt;city&gt;Hoffman Estates&lt;/city&gt;&#xA;         &lt;state&gt;IL&lt;/state&gt;&#xA;         &lt;zip&gt;60169&lt;/zip&gt;&#xA;      &lt;/serviceLocation&gt;&#xA;      &lt;schedule&gt;&#xA;         &lt;scheduleType&gt;range&lt;/scheduleType&gt;&#xA;         &lt;serviceDateTime1&gt;2015-11-21T08:00:00Z&lt;/serviceDateTime1&gt;&#xA;         &lt;serviceDateTime2&gt;2015-11-22T17:00:00Z&lt;/serviceDateTime2&gt;&#xA;      &lt;/schedule&gt;&#xA;      &lt;pricing&gt;&#xA;         &lt;priceModel&gt;NAME_PRICE&lt;/priceModel&gt;&#xA;         &lt;laborSpendLimit&gt;0.00&lt;/laborSpendLimit&gt;&#xA;         &lt;partsSpendLimit&gt;0&lt;/partsSpendLimit&gt;&#xA;      &lt;/pricing&gt;&#xA;      &lt;contacts&gt;&#xA;         &lt;contact&gt;&#xA;            &lt;contactLocnType&gt;Service&lt;/contactLocnType&gt;&#xA;            &lt;firstName&gt;Brian&lt;/firstName&gt;&#xA;            &lt;lastName&gt;Schoerner&lt;/lastName&gt;&#xA;            &lt;primaryPhone&gt;&#xA;               &lt;phoneType&gt;Home&lt;/phoneType&gt;&#xA;               &lt;number&gt;618-672-4757&lt;/number&gt;&#xA;            &lt;/primaryPhone&gt;&#xA;            &lt;altPhone xsi:nil=&#34;true&#34;/&gt;&#xA;            &lt;email&gt;slbulkemailtesting@gmail.com&lt;/email&gt;&#xA;         &lt;/contact&gt;&#xA;      &lt;/contacts&gt;&#xA;&#xA;   &lt;/serviceorder&gt;&#xA;&lt;/soRequest&gt;&#xA;</string>", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept-Encoding": "gzip", 
+    "Content-Length": "6078", 
+    "Content-Type": "application/xml", 
+    "Host": "httpbin.org", 
+    "User-Agent": "GRequests 0.1"
+  }, 
+  "json": null, 
+  "origin": "73.50.93.211", 
+  "url": "http://httpbin.org/post"
+}
+
+
+*****
+
+
+
+******
+
+The response to #: 2 is:
+
+HTTP/1.1 200 OK
+Content-Length: 467
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Connection: keep-alive
+Content-Type: application/json
+Date: Sat, 04 Jul 2015 17:46:32 GMT
+Server: nginx
+
+{
+  "args": {}, 
+  "data": "\"{\\n  \\\"flag\\\": true,\\n  \\\"text\\\": \\\"My flag is true\\\"\\n}\\n\"\n", 
+  "files": {}, 
+  "form": {}, 
+  "headers": {
+    "Accept-Encoding": "gzip", 
+    "Content-Length": "61", 
+    "Content-Type": "application/json", 
+    "Host": "httpbin.org", 
+    "User-Agent": "GRequests 0.1"
+  }, 
+  "json": "{\n  \"flag\": true,\n  \"text\": \"My flag is true\"\n}\n", 
+  "origin": "73.50.93.211", 
+  "url": "http://httpbin.org/post"
+}
+
+
+*****
+

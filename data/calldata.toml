@@ -1,0 +1,112 @@
+# TOML document
+
+# Base URL
+[base]
+url = "http://151.149.118.30:9880/public/v1.2/buyers/"
+
+[[requests]]
+url = "http://httpbin.org/get"
+usebase = false
+method = "GET"
+  [requests.params]
+    key1 = "value1"
+
+[[requests]]
+url = "http://httpbin.org/post"
+usebase = false
+method = "POST"
+typebody = "application/xml"
+body = '''
+<soRequest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.servicelive.com/namespaces/soRequest">
+   <identification type="BuyerResourceId">
+      <id>20269</id>
+   </identification>
+   <serviceorder version="1.0" template="Electrical Template">
+      <sectionGeneral>
+         <title>Install 1 Outlet for Digital Life device</title>
+         <overview>LICENSED ELECTRICIAN REQUIRED: **Installation of outlet (power source) for a Digital Life device, such as an outdoor camera. For additional questions regarding this service
+order, please contact the Digital Life Dispatch Center (DLDC) at 855-455-9913 (option 1)  1. Electronic copies of device specific installation guides are attached to each
+service order within the ServiceLive system.  2. ALL providers must complete applicable training modules prior to going onsite for their first AT&amp;T job.  Training available at
+lms.servicelive.com (your login was emailed to your company administrator) 3. We want to pay you quickly, so please upload your signed copy of the service order and complete for
+payment in the ServiceLive system as soon as possible. --- THIS IS A CUSTOMER SELECTED DATE/TIME. 4. You MUST be able to arrive for the appointment and do this service within
+the date/time window requested by the Customer. 5. DO NOT accept this order unless you are able to honor the Customer's requested date/time and DO NOT reschedule.</overview>
+         <buyerTerms>**VERY IMPORTANT --- SEE ATTACHED ?ATT Buyer T&amp;C? DOCUMENT FOR DETAILED INSTRUCTIONS AND COMPLETE BUYER TERMS AND CONDITIONS THAT MUST BE FOLLOWED**
+**BEFORE DOING ANY
+ADDITIONAL WORK REQUESTED BY THE DLT, call the DLDC at 855-455-9913, option 1
+***CONTACT/SUPPORT NUMBERS***
+1.	AT&amp;T Digital Life Dispatch Center (SLI or coordination issues)
+a.	855-455-9913 ? Option 1
+2.	AT&amp;T Digital Life Customer Care (Call at the end of EVERY non-coordinated appt. to ensure device is working)
+a.	855-455-9913 ? Option 2</buyerTerms>
+         <specialInstructions>Handle Digital Life devices carefully</specialInstructions>
+      </sectionGeneral>
+      <scopeOfWork>
+         <mainCategoryID>1700</mainCategoryID>
+         <tasks>
+            <task>
+               <taskName>1 Outlet for Digital Life device</taskName>
+               <categoryID>1704</categoryID>
+               <serviceType>Installation</serviceType>
+               <taskComment>**PLEASE CAREFULLY READ THE BUYER TERMS AND CONDITIONS SECTION OF THIS SERVICE ORDER AS IT CONTAINS CRITICAL DETAILS RELATED TO THIS JOB**
+**BEFORE DOING ANY ADDITIONAL WORK REQUESTED BY THE DLT, call the DLDC at 855-455-9913, option 1**
+**TECHNICAL ASSISTANCE NEEDED?  REACH OUT TO OUR TECHNICAL SUPPORT TEAM @ 972-488-4345**
+Time Estimation:  This service includes an average of 1 hour of service and troubleshooting including drive time for the first outlet plus an additional 30 minutes for each additional outlet.
+1. All work performed must comply with all applicable regulations and utilize standard electrical procedures.
+2. Identify location(s) of outlet(s) to be installed for outdoor camera with AT&amp;T contact and customer.
+3. Install outlet to provide power source for outdoor camera.
+4. Test physical functionality of the outlet to ensure proper working capabilities.
+5. Complete Service Order with the DL Tech (coordinated) and customer, and get signature. DL Tech and Customer validate proper installation and functionality together.
+6. Dispose of all trash and personally hand a copy of documents and manuals to the AT&amp;T contact prior to departure. Please do not leave the work area in a mess.
+7. Take the time to answer any questions of the DL Tech and customer.
+8. Upload signed service order and any additional paperwork (e.g. permit/inspection information) onto ServiceLive platform. - Quantity: 1</taskComment>
+            </task>
+         </tasks>
+      </scopeOfWork>
+      <serviceLocation>
+         <locationType>Residential</locationType>
+         <locationName>VacationHome</locationName>
+         <address1>Barrington Rd</address1>
+         <address2>APT 101</address2>
+         <city>Hoffman Estates</city>
+         <state>IL</state>
+         <zip>60169</zip>
+      </serviceLocation>
+      <schedule>
+         <scheduleType>range</scheduleType>
+         <serviceDateTime1>2015-11-21T08:00:00Z</serviceDateTime1>
+         <serviceDateTime2>2015-11-22T17:00:00Z</serviceDateTime2>
+      </schedule>
+      <pricing>
+         <priceModel>NAME_PRICE</priceModel>
+         <laborSpendLimit>0.00</laborSpendLimit>
+         <partsSpendLimit>0</partsSpendLimit>
+      </pricing>
+      <contacts>
+         <contact>
+            <contactLocnType>Service</contactLocnType>
+            <firstName>Brian</firstName>
+            <lastName>Schoerner</lastName>
+            <primaryPhone>
+               <phoneType>Home</phoneType>
+               <number>618-672-4757</number>
+            </primaryPhone>
+            <altPhone xsi:nil="true"/>
+            <email>slbulkemailtesting@gmail.com</email>
+         </contact>
+      </contacts>
+
+   </serviceorder>
+</soRequest>
+'''
+
+[[requests]]
+url = "http://httpbin.org/post"
+usebase = false
+method = "POST"
+typebody = "application/json"
+body = '''
+{
+  "flag": true,
+  "text": "My flag is true"
+}
+'''
